@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Казино</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div id="age-confirmation" class="container">
+        <p>Вам есть 18 лет?</p>
+        <button id="age-confirm-yes">Да</button>
+        <button id="age-confirm-no">Нет</button>
+    </div>
+
+    <div id="login-section" class="hidden container">
+        <h2>Вход в казино</h2>
+        <input type="text" id="last-name" placeholder="Фамилия" required>
+        <input type="text" id="first-name" placeholder="Имя" required>
+        <input type="text" id="middle-name" placeholder="Отчество" required>
+        <input type="date" id="birth-date" required>
+        <input type="text" id="inn" placeholder="ИНН" maxlength="12" required>
+        <input type="text" id="passport-id" placeholder="ID паспорта" maxlength="10" required>
+        <button id="login-btn">Войти</button>
+    </div>
+
+    <div id="balance-section" class="hidden container">
+        <h2>Баланс: <span id="balance">1000</span> ₽</h2>
+        <input type="number" id="deposit-amount" placeholder="Сумма пополнения" min="1">
+        <button id="deposit-btn">Пополнить баланс</button>
+        <button id="go-to-bet-btn">Перейти к ставкам</button>
+    </div>
+
+    <div id="bet-section" class="hidden container">
+        <h2>Сделать ставку</h2>
+        <input type="text" id="card-number" placeholder="Номер карты" required>
+        <input type="text" id="expiry-date" placeholder="Срок действия (MM/YY)" required>
+        <input type="text" id="cvv" placeholder="CVV" required>
+        <input type="number" id="bet-amount" placeholder="Сумма ставки" min="1" required>
+        <button id="bet-btn">Сделать ставку</button>
+    </div>
+
+    <div id="game-section" class="hidden container">
+        <div id="roulette" class="roulette">🎰</div>
+        <button id="play-game-btn">Играть</button>
+        <button id="back-btn">Вернуться назад</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
